@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Event emitter (mediator, observer)
 
 Global name window.e;
@@ -39,3 +40,9 @@ Just like on, but causes the bound callback to only fire once before being remov
 
 - installTo __object.installTo(object, [withEvents])__
 Clone events ability to other object. withEvents - clone events previous object or not. Not by default.
+=======
+events
+======
+
+Events
+>>>>>>> cdf50d5367ebe54b044d2fcee1202c6956acbf7e
