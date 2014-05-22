@@ -12,16 +12,21 @@
 			},
 			test2 = function(arg1) {
 				console.log('test2', arg1);
-			};
+			},
+			e = new E();
 
 		e.on('test', test);
 		e.on('test2', test2);
+
+		
 
 		//e.off(null, test);
 		//e.off(null, test2);
 
 		e.trigger('test test2', 100);
-		//e.trigger('test', 100);
+		//e.trigger('test', 200);
+
+		console.log(e);
 	</script>
 </body>
 </html>

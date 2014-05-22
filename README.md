@@ -1,6 +1,6 @@
 #Event emitter (mediator, observer)
 
-Global name window.e;
+Global name window.E;
 
 ##Methods
 - on - __object.on(event, callback, [context])__
@@ -43,7 +43,5 @@ Trigger callbacks for the given event, or space-delimited list of events. Subseq
 
 Just like on, but causes the bound callback to only fire once before being removed. Handy for saying "the next time that X happens, do this".
 
-- installTo - __object.installTo(object, [withEvents])__
-
-Clone events ability to other object. withEvents - clone events previous object or not. Not by default.
+Clone ability emit events to other object. withEvents - clone events of previous object or not. No by default.
 
