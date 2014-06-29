@@ -81,13 +81,13 @@
 
 		var args = Array.prototype.slice.call(arguments, 1) || [],
 			namesArr = eventName.split(' '),
-			allArgs, arr;
+			allArgs, arr, arrAll;
 
 		namesArr.forEach(function(name, i) {
 			if (!this._events[name]) return this;
 
 			arr		= this._events[name].callbacks;
-			arrAll	= (this._events['all'] && this._events['all'].callbacks) || [];
+			arrAll	= (this._events.all && this._events.all.callbacks) || [];
 			allArgs	= args.slice();
 
 			allArgs.unshift(name);
